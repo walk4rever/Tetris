@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    gap: 30px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.game-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 200px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+.score-container {
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.score-container p {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.next-piece {
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.next-piece p {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.controls {
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.controls p {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.controls ul {
+    padding-left: 20px;
+}
+
+.controls li {
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#reset-button {
+    background-color: #f44336;
+}
+
+#reset-button:hover {
+    background-color: #d32f2f;
+}
+
+.game-board-container {
+    border: 2px solid #333;
+}
+
+#game-board {
+    display: block;
+    background-color: #111;
+}

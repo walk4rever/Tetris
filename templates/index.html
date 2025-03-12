@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="game-info">
+            <h1>Tetris</h1>
+            <div class="score-container">
+                <p>Score: <span id="score">0</span></p>
+                <p>Level: <span id="level">1</span></p>
+                <p>Lines: <span id="lines">0</span></p>
+            </div>
+            <div class="next-piece">
+                <p>Next Piece:</p>
+                <canvas id="next-piece-canvas" width="100" height="100"></canvas>
+            </div>
+            <div class="controls">
+                <p>Controls:</p>
+                <ul>
+                    <li>Left/Right: Move</li>
+                    <li>Up: Rotate</li>
+                    <li>Down: Soft Drop</li>
+                    <li>Space: Hard Drop</li>
+                    <li>P: Pause</li>
+                </ul>
+            </div>
+            <button id="start-button">Start Game</button>
+            <button id="reset-button">Reset Game</button>
+        </div>
+        <div class="game-board-container">
+            <canvas id="game-board" width="300" height="600"></canvas>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='tetris.js') }}"></script>
+</body>
+</html>
